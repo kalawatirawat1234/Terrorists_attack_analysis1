@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-import seaborn as sns
 import geopandas as gpd
 import os
 import folium
