@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 import geopandas as gpd
 import os
 import folium
@@ -10,7 +11,8 @@ from streamlit_folium import st_folium  # This allows you to display folium maps
 st.set_page_config(page_title="Terrorism Data Analysis", layout="centered")
 
 # Shapefile path
-shapefile_path = r"C:\Users\rawat\PycharmProjects\PythonProject\ne_110m_admin_0_countries.shp"
+shapefile_path = "ne_110m_admin_0_countries.shp"
+
 
 # Check if shapefile exists
 if not os.path.exists(shapefile_path):
